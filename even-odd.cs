@@ -1,21 +1,28 @@
 using System;
-					
-public class Program
-{
-	public static void Main()
-	{
-		
-		Console.WriteLine("Enter Any Number");
-		string num;
-		num = Console.ReadLine();
-		int n = Convert.ToInt32(num);
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-		if ((n/2)*2 == n) {
-			 Console.Write("The Given Number is Even");
-             Console.ReadLine();
-		} else {
-			 Console.Write("The Given Number is Odd");
-             Console.ReadLine();
-		}
-	}
+namespace even_odd
+{
+    class Program
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Enter Any Number");
+            int n = int.Parse(Console.ReadLine());
+
+            if ((n / 2) * 2 == n)
+            {
+                Console.Write("The Given Number is Even");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.Write("The Given Number is Odd");
+                Console.ReadLine();
+            }
+        }
+    }
 }
