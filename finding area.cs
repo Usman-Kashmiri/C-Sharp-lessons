@@ -35,11 +35,14 @@ namespace Inheritance
         {
             Rectangle rectangle = new Rectangle();
             
-            Console.WriteLine("The values of X is \n");
+            Console.WriteLine("Enter value of X: \n");
             int x = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Enter value of Y: \n");
+            int y = int.Parse(Console.ReadLine());
 
             rectangle.setHeight(x);
-            rectangle.setWidth(4);
+            rectangle.setWidth(y);
 
             Console.WriteLine("Total area is " + rectangle.setArea());
             Console.ReadKey();
